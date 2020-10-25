@@ -1,0 +1,215 @@
+/* CSS Document */
+table.formstepstart{
+	width: 100%;
+	border: 0px;
+}
+
+.formlang{
+	border: 0px;
+	width: 100%;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.formstep{
+	width: 100%;
+	text-align: center;
+}
+.divformstep{
+	margin-left: 30px;
+	width: 90%;
+	text-align: left;
+}
+
+input
+{
+	font: 11px verdana, arial, helvetica, sans-serif ;
+	border: 1px solid #8699B5;
+	background: #F2F4F7;
+	
+}
+
+textarea
+{
+	border: 1px solid #8699B5;
+	width: 500px;
+	font: 11px verdana, arial, helvetica, sans-serif;
+	background-color: #F2F4F7;
+}
+
+input.formTextBox
+{
+	border: 1px solid #8699B5;
+	background: #F2F4F7;
+	font: 11px verdana, arial, helvetica, sans-serif;
+}
+
+select
+{
+	
+	border: 1px solid #8699B5;
+	font: 11px verdana, arial, helvetica, sans-serif;
+	background-color: #F2F4F7;
+}	
+
+.formtitle{
+	font-size: 15px;
+	text-decoration: underline;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+table.formelements{
+	border: 0px;
+	width: 100%;
+}
+
+.formelementscaption{
+	text-align: left;
+}
+
+.formelementsbody{
+	text-align: left;
+}
+
+.langor{
+	width: 10%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+	}
+
+.formstep4select{
+	width: 45%;
+}
+
+.formstep4add{
+	width: 45%;
+}
+
+.tdformlang{
+	width: 100%;
+}
+
+td.formstep{
+	width: 100%;
+}
+
+.pageheader{
+	
+}
+
+.pagefooter{
+	text-align: center;
+	font-size: 12px;
+	margin-top: 25px;
+}
+
+.cvlogo{
+	text-align: center;
+	
+}
+
+.usertitle{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.specialities{
+	text-align: center;
+	font-size: 15px;
+}
+
+.topsection{
+	
+}
+
+.sectiontiltle{
+	font-weight: bold;
+	font-size: 18px;
+	border-bottom: solid;
+	margin-top: 20px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.frame{
+	margin: 10px;
+}
+
+.summary{
+	text-align: justify;
+}
+
+.cvmargin{
+	margin: 25px;
+}
+
+.xpdetailbold{
+	font-weight: bold;
+	font-size: 15px;
+	float: left;
+	
+}
+
+.xpdetailposition{
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+	clear: both;
+}
+
+.xpdetaildesc{
+	font-size: 15px;
+	border-bottom: 1px dotted #000000;
+}
+
+.xpdetail{
+	font-size: 15px;
+	float: left;	
+}
+
+.edudetail{
+	font-size: 15px;
+	border-bottom: 1px dotted #000000;
+}
+
+.viewbutton{
+	margin-bottom: 5px;	
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.stepbutton{
+	
+}
+
+.cvbutton{
+	text-align: left;
+}
+
+.bodyprintcv{
+	style="font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	background: #FFFFFF;
+	color: #000000;
+	
+}
+
+div.expertiseSectionDesc{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+li.expertiseSectionDesc{
+	list-style: disc;
+	margin-left: 20px;
+	
+}
+.expertiseSectionTitle{
+	margin-top: 15px;
+	font-weight: bold;
+}

@@ -1,0 +1,92 @@
+<div width="100%" align="center">
+	<div class="cvbutton">	
+		<div class="viewbutton">
+			<a href="view.php"><img src="images/<{$lang_name}>/view.gif" width="283" height="30"></a>
+		</div>
+		<div class="stepbutton">
+			<a href="step1.php"><img src="images/<{$lang_name}>/step01_down.gif" onmouseover="this.src='images/<{$lang_name}>/step01_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step01_down.gif'"></a>
+			<a href="step2.php"><img src="images/<{$lang_name}>/step02_down.gif" onmouseover="this.src='images/<{$lang_name}>/step02_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step02_down.gif'"></a>
+			<a href="step3.php"><img src="images/<{$lang_name}>/step03_down.gif" onmouseover="this.src='images/<{$lang_name}>/step03_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step03_down.gif'"></a>
+			<img src="images/<{$lang_name}>/step04_up.gif">
+		</div>
+	</div>
+	<div class="divformstep">
+	<a name=step4form>
+		<table class="formstep">
+    		<tr>
+    			<td class="formstep4select">
+					<{$cvexpert.javascript}>
+    				<div class="formtitle"><{$cvexpert.title}></div>
+    				<form name="<{$cvexpert.name}>" action="<{$cvexpert.action}>" method="<{$cvexpert.method}>" <{$cvexpert.extra}> >
+        				<table class="formelements">
+							<{foreach item=element from=$cvexpert.elements}>
+	            				<tr>
+	            					<td class="formelementscaption"><{$element.caption}></td>
+	            					<td class="formelementsbody"><{$element.body}></td>
+	            				</tr>
+							<{/foreach}>
+        				</table>
+        			</form>
+        		</td>
+				<td class="langor"><{$lang_or}></td>
+        		<td class="formstep4add">
+        			<{$addexpitem.javascript}>
+    				<div class="formtitle"><{$addexpitem.title}></div>
+    				<form name="<{$addexpitem.name}>" action="<{$addexpitem.action}>" method="<{$addexpitem.method}>" <{$addexpitem.extra}> >
+        				<table class="formelements">
+							<{foreach item=element from=$addexpitem.elements}>
+								<tr>
+            						<td class="formelementscaption"><{$element.caption}></td>
+            		           	</tr>            	
+								<tr>
+				            		<td class="formelementsbody"><{$element.body}></td>
+            					</tr>
+							<{/foreach}>
+        				</table>	
+        			</form>	
+        		</td>
+			</tr>
+		</table><br>
+ 		<hr>
+	</div>
+	<div class="divformstep">
+	<a name=step4form>
+		<table class="formstep">
+    		<tr>
+    			<td class="formstep4select">
+					<{$cvtechskill.javascript}>
+    				<div class="formtitle"><{$cvtechskill.title}></div>
+    				<form name="<{$cvtechskill.name}>" action="<{$cvtechskill.action}>" method="<{$cvtechskill.method}>" <{$cvtechskill.extra}> >
+        				<table class="formelements">
+							<{foreach item=element from=$cvtechskill.elements}>
+	            				<tr>
+	            					<td class="formelementscaption"><{$element.caption}></td>
+	            					<td class="formelementsbody"><{$element.body}></td>
+	            				</tr>
+							<{/foreach}>
+        				</table>
+        			</form>
+        		</td>
+				<td class="langor"><{$lang_or}></td>
+        		<td class="formstep4add">
+        			<{$addtechskillitem.javascript}>
+    				<div class="formtitle"><{$addtechskillitem.title}></div>
+    				<form name="<{$addtechskillitem.name}>" action="<{$addtechskillitem.action}>" method="<{$addtechskillitem.method}>" <{$addtechskillitem.extra}> >
+        				<table class="formelements">
+							<{foreach item=element from=$addtechskillitem.elements}>
+								<tr>
+            						<td class="formelementscaption"><{$element.caption}></td>
+            		           	</tr>            	
+								<tr>
+				            		<td class="formelementsbody"><{$element.body}></td>
+            					</tr>
+							<{/foreach}>
+        				</table>	
+        			</form>	
+        		</td>
+			</tr>
+		</table><br>
+ 		<hr>
+    	<div class="help" align="left"><{$lang_help_ctrlclic}></div>
+	</div>
+</div>

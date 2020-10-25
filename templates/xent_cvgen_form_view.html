@@ -1,0 +1,33 @@
+<div class="formstepstart">
+	<div class="cvbutton">	
+		<div class="viewbutton">
+			<a href="view.php"><img src="images/<{$lang_name}>/view.gif" width="283" height="30"></a>
+		</div>
+		<div class="stepbutton">
+			<a href="step1.php"><img src="images/<{$lang_name}>/step01_down.gif" onmouseover="this.src='images/<{$lang_name}>/step01_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step01_down.gif'"></a>
+			<a href="step2.php"><img src="images/<{$lang_name}>/step02_down.gif" onmouseover="this.src='images/<{$lang_name}>/step02_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step02_down.gif'"></a>
+			<a href="step3.php"><img src="images/<{$lang_name}>/step03_down.gif" onmouseover="this.src='images/<{$lang_name}>/step03_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step03_down.gif'"></a>
+			<a href="step4.php"><img src="images/<{$lang_name}>/step04_down.gif" onmouseover="this.src='images/<{$lang_name}>/step04_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step04_down.gif'"></a>
+		</div>
+	</div>
+	<center>
+	<table class="formlang">
+    	<tr>
+    		<td class="tdformlang">
+				<{$export.javascript}>
+    			<div class="formtitle"><{$export.title}></div>
+    			<form name="<{$export.name}>" action="<{$export.action}>" method="<{$export.method}>"<{$export.extra}> >
+    				<table class="formelements">
+						<{foreach item=element from=$export.elements}>
+       					<tr>
+       						<td class="formelementscaption"><{$element.caption}></td>
+       						<td class="formelementsbody"><{$element.body}></td>
+       					</tr>
+						<{/foreach}>
+   					</table>
+   				</form>
+   			</td>	
+   		</tr>
+	</table>
+	</center><br>
+</div>

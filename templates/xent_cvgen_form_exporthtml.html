@@ -1,0 +1,95 @@
+<div class="cvmargin">
+
+<!-- START SUMMARY -->
+<div class="topsection">
+	<div class="pageheader"><{$page_header}></div>
+	<div class="cvlogo"><{$logo}></div>
+	<div class="usertitle"><{$USERNAME}></div>
+	<div class="specialities"><{$SPECIALITIES}></div>
+	<div class="sectiontiltle"><{$lang_summary}></div>
+	<div class="frame">
+		<div class="summary"><{$SUMMARY}></div>
+	</div>
+</div>
+<!-- END SUMMARY -->
+		
+		
+<!-- START Professional experience -->
+	<div class="sectiontiltle"><{$lang_xp_title}></div>
+	<{foreach item=cvxp from=$listcvxp}>
+		<div class="frame">
+			<div class="xpdetailbold"><{$cvxp.client_name}></div><div class="xpdetail"> - <{$cvxp.city}>, <{$cvxp.region}>, <{$cvxp.country}> * <{$cvxp.date_start}> - <{$cvxp.date_end}></div>
+			<div class="xpdetailposition"><{$cvxp.position}></div>
+			<div class="xpdetaildesc"><{$cvxp.description}></div>
+		</div>
+	<{/foreach}>
+<!-- END Professional experience -->
+
+<!-- START Education -->
+	<div class="sectiontiltle"><{$lang_edu_title}></div>
+	<div class="frame">
+	<{foreach item=cvedu from=$listcvedu}>
+		
+			<div class="edudetail"><{$cvedu.edu_name}> - <{$cvedu.institution}>, <{$cvedu.city}>, <{$cvedu.country}> * <{$cvedu.date}></div>
+		
+	<{/foreach}>
+	</div>
+<!-- END Education -->
+
+<!-- START EXPERTISE -->
+<div class="sectiontiltle"><{$lang_exp_title}></div>
+<div class="frame">
+	<{foreach item=expcat from=$expcat}>
+    	<{if $expcat.display == 0}>
+			<div class="expertiseSectionTitle"><{$expcat.name}></div>
+            <div class="expertiseSectionDesc">
+	        	<{foreach item=arr from=$expcat.item}>
+					<li class="expertiseSectionDesc"><{$arr}></li>
+				<{/foreach}>
+			</div>
+        <{else}>
+       		<div class="expertiseSectionTitle"><{$expcat.name}></div>
+       		<div class="expertiseSectionDesc">
+	        	<{foreach item=arr from=$expcat.item}>
+	   		        <li class="expertiseSectionDesc"><{$arr}></li>
+	            <{/foreach}>
+	        </div>
+        <{/if}>
+    <{/foreach}>
+</div>
+<!-- END EXPERTISE -->
+
+
+<!-- START TECHNICAL SKILL -->
+<div class="sectiontiltle"><{$lang_techskill_title}></div>
+<div class="frame">
+	<{foreach item=techskillcat from=$techskillcat}>
+    	<{if $techskillcat.display == 0}>
+			<div class="expertiseSectionTitle"><{$techskillcat.name}></div>
+            <div class="expertiseSectionDesc">
+	        	<{foreach item=arr from=$techskillcat.item}>
+					<li class="expertiseSectionDesc"><{$arr}></li>
+				<{/foreach}>
+			</div>
+        <{else}>
+       		<div class="expertiseSectionTitle"><{$techskillcat.name}></div>
+       		<div class="expertiseSectionDesc">
+	        	<{foreach item=arr from=$techskillcat.item}>
+	   		        <li class="expertiseSectionDesc"><{$arr}></li>
+	            <{/foreach}>
+	        </div>
+        <{/if}>
+    <{/foreach}>
+</div>
+<!-- END TECHNICAL SKILL -->
+
+	<div class="pagefooter"><{$page_footer}></div>
+
+</div>
+
+
+
+
+
+
+

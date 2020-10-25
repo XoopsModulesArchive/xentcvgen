@@ -1,0 +1,59 @@
+<div width="100%" align="center">
+
+	<div class="cvbutton">	
+		<div class="viewbutton">
+			<a href="view.php"><img src="images/<{$lang_name}>/view.gif" width="283" height="30"></a>
+		</div>
+		<div class="stepbutton">
+			<a href="step1.php"><img src="images/<{$lang_name}>/step01_down.gif" onmouseover="this.src='images/<{$lang_name}>/step01_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step01_down.gif'"></a>
+			<img src="images/<{$lang_name}>/step02_up.gif">
+			<a href="step3.php"><img src="images/<{$lang_name}>/step03_down.gif" onmouseover="this.src='images/<{$lang_name}>/step03_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step03_down.gif'"></a>
+			<a href="step4.php"><img src="images/<{$lang_name}>/step04_down.gif" onmouseover="this.src='images/<{$lang_name}>/step04_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step04_down.gif'"></a>
+		</div>
+	</div>
+
+<div width="600" align="left" >
+
+<div class="listcvxp" style="width: 100%;">
+<{$lang_xp_title}>
+<{foreach item=cvxp from=$listcvxp}>
+<hr>
+<div class="cvxp" style="width: 100%;"><table width="100%"><tr><td>
+<{$cvxp.client_name}> - <{$cvxp.city}>, <{$cvxp.region}>, <{$cvxp.country}> * <{$cvxp.date_start}> - <{$cvxp.date_end}>
+<br><{$cvxp.position}>
+<br><{$cvxp.description}></td><td width="160">
+<div align="right" style="width: 160px;"><{$cvxp.editform}></div></td></tr></table>
+
+</div>
+
+<{/foreach}>
+<hr>
+</div>
+
+
+
+<a name=step2form>
+<table border="0" width="100%">
+    <tr>
+    <td width="100%">
+						<{$cvgenxp.javascript}>
+    <font size="4"><u><{$cvgenxp.title}></u></font>
+    <form name="<{$cvgenxp.name}>" action="<{$cvgenxp.action}>" method="<{$cvgenxp.method}>" <{$cvgenxp.extra}>>
+        <table border="0">
+							<{foreach item=element from=$cvgenxp.elements}>
+            <tr>
+            <td><{$element.caption}></td>
+            <td><{$element.body}></td>
+            </tr>
+<{/foreach}>
+        </table>
+        </form>
+        </td>
+        </tr>
+    </table><br>
+ <hr>
+    <div class="help"><{$lang_helpxp}></div>
+    </div>
+    
+
+</div>

@@ -1,0 +1,56 @@
+<div width="100%" align="center">
+
+	<div class="cvbutton">	
+		<div class="viewbutton">
+			<a href="view.php"><img src="images/<{$lang_name}>/view.gif" width="283" height="30"></a>
+		</div>
+		<div class="stepbutton">
+			<a href="step1.php"><img src="images/<{$lang_name}>/step01_down.gif" onmouseover="this.src='images/<{$lang_name}>/step01_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step01_down.gif'"></a>
+			<a href="step2.php"><img src="images/<{$lang_name}>/step02_down.gif" onmouseover="this.src='images/<{$lang_name}>/step02_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step02_down.gif'"></a>
+			<img src="images/<{$lang_name}>/step03_up.gif">
+			<a href="step4.php"><img src="images/<{$lang_name}>/step04_down.gif" onmouseover="this.src='images/<{$lang_name}>/step04_up.gif'" onmouseout="this.src = 'images/<{$lang_name}>/step04_down.gif'"></a>
+		</div>
+	</div>
+<div width="600" align="left" >
+
+<div class="listcvedu" style="width: 100%;">
+<{$lang_edu_title}>
+<{foreach item=cvedu from=$listcvedu}>
+<hr>
+<div class="cvedu" style="width: 100%;"><table width="100%"><tr><td>
+<{$cvedu.edu_name}> - <{$cvedu.institution}>, <{$cvedu.city}>, <{$cvedu.country}> * <{$cvedu.date}></td>
+<td width="160"><div align="right" style="width: 160px;"><{$cvedu.editform}></div></td></tr></table>
+
+</div>
+
+<{/foreach}>
+<hr>
+</div>
+
+
+
+<a name=step3form>
+<table border="0" width="100%">
+    <tr>
+    <td width="100%">
+						<{$cvgenedu.javascript}>
+    <font size="4"><u><{$cvgenedu.title}></u></font>
+    <form name="<{$cvgenedu.name}>" action="<{$cvgenedu.action}>" method="<{$cvgenedu.method}>" <{$cvgenedu.extra}> >
+        <table border="0">
+							<{foreach item=element from=$cvgenedu.elements}>
+            <tr>
+            <td><{$element.caption}></td>
+            <td><{$element.body}></td>
+            </tr>
+<{/foreach}>
+        </table>
+        </form>
+        </td>
+        </tr>
+    </table>
+    <hr>
+    <div class="help"><{$lang_helpedu}></div>
+    </div>
+    
+
+</div>
